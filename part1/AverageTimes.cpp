@@ -112,9 +112,9 @@ float averageSearch(myInput inp, int (*func)(std::vector<inputValues>& day, int 
 		index = -1; i = 0; time = 0;
 		while (i < tempor.size() && index == -1) {
 
-			t1 = std::chrono::high_resolution_clock::now();
+			auto t1 = std::chrono::high_resolution_clock::now();
 			index = func(tempor[i], 0, tempor[i].size() - 1, searchfor[j]);
-			t2 = std::chrono::high_resolution_clock::now();
+			auto t2 = std::chrono::high_resolution_clock::now();
 
 			time = (int)std::chrono::duration_cast<std::chrono::nanoseconds>(t2 - t1).count();
 			i++;
