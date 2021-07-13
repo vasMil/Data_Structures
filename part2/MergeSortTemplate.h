@@ -1,6 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <vector>
+#include <math.h>
 class node;
 //https://www.tutorialspoint.com/Why-can-Cplusplus-templates-only-be-implemented-in-the-header-file
 //Solution to that may provide the keyword export
